@@ -1,0 +1,23 @@
+# Daily-Challenge
+dc's of skillrack
+#include<stdio.h>
+#include <stdlib.h>
+
+int alphabetPos(char ch)
+{
+    return ch-'a'+1;
+}
+
+int main()
+{
+    char s[101];
+    int len,sum;
+    scanf("%s%n",s,&len);
+    for(int i=0;i<len;i++)
+        sum=sum+alphabetPos(s[i]);
+    printf("%d",sum);    
+}
+
+ip=abca
+op=7
+// 1+2+3+1
